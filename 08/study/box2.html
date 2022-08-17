@@ -35,12 +35,25 @@
             text-align: center;
         }
 
+        .box-sub1 {
+            display: inline-block;
+            width: 50%;
+            text-align: left;
+        }
+
+        .box-sub2 {
+            display: inline-block;
+            width: 50%;
+            text-align: right;
+        }
+
 
         .box1 {
             display: inline-block;
+            margin: 0px auto;
             border: 2px solid steelblue;
-            /* padding: 20px; /* 공백순서 : 위 오른쪽 아래 왼쪽 (시계방향)*/
-           /* padding-top: 0px; */
+            padding: 20px; /* 공백순서 : 위 오른쪽 아래 왼쪽 (시계방향) */
+            padding-top: 0px;
             width: 100px;
             height: 100px;
             background-color: pink;
@@ -53,11 +66,10 @@
             width: 100px;
             height: 100px;
             background-color: steelblue; 
-            text-align: center;
             
         }
 
-        .box3 {
+        /* .box3 {
             display: inline-block;
             border: 2px solid seagreen;
             width: 100px;
@@ -75,24 +87,21 @@
             background-color: palevioletred; 
 
             text-align: center;
-        }
+        } */
     </style>
 </head>
 <body>
     <div class="main-box">
         <div class="box-container1">
-            <div class="box1">html</div>
-        </div>
-        <div class="box-container2">
             <div class="box2"></div>
         </div>
+        <div class="box-container2">
+            <div class="box-sub1"><div class="box2"></div></div><div class="box-sub2"><div class="box2"></div></div>
+        </div>
         <div class="box-container3">
-            <div class="box3"></div>   
+            <div class="box2"></div>
         </div>
-        <div class="box-container1">
-            <div class="box4"></div>
-        </div>
-        
+       
     </div>      
 </body>
 </html>
